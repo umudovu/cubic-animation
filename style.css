@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(205,60,48);
+    background: linear-gradient(319deg, rgba(205,60,48,1) 0%, rgba(228,233,148,1) 100%);
+}
+
+.container{
+    width: 1100px;
+    height: 150px;
+    border: 3px solid white;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 3px groove white;
+    background-image: url(./e.png);
+    background-size: cover;
+    background-clip:content-box;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes anime{
+    0%{
+        top: 50px;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+    10%{
+        top: 0px;
+        left: 100px;
+        transform: rotateZ(90deg);
+    }
+    20%{
+        top: 50px;
+        left: 200px;
+        transform: rotateZ(180deg);
+    }
+    30%{
+        top: 0px;
+        left: 300px;
+        transform: rotateZ(270deg);
+    }
+    40%{
+        top: 50px;
+        left: 400px;
+        transform: rotateZ(360deg);
+    }
+    50%{
+        top: 0px;
+        left: 500px;
+        transform: rotateZ(450deg);
+    }
+    60%{
+        top: 50px;
+        left: 600px;
+        transform: rotateZ(540deg);
+    }
+    70%{
+        top: 0px;
+        left: 700px;
+        transform: rotateZ(630deg);
+    }
+    80%{
+        top: 50px;
+        left: 800px;
+        transform: rotateZ(720deg);
+    }
+    90%{
+        top: 0px;
+        left: 900px;
+        transform: rotateZ(810deg);
+    }
+    100%{
+        top: 50px;
+        left: 1000px;
+        transform: rotateZ(900deg);
+    }
+}
